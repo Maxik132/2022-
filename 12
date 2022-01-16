@@ -1,0 +1,16 @@
+
+var
+  n: longint;
+  k: byte;
+begin
+  k:=0;
+  write('Введите число n: ');
+  readln(n);
+  while n>0 do
+  begin
+    if n mod 10 mod 2<>0 then k:=k+1;
+    n:=n div 10;
+  end;
+  writeln('В числе  ',k,' нечетных цифр');
+  readln;
+end.
